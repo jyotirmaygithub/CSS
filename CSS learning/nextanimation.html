@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>next level animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 90vh;
+            width: 100%;
+            background-color: aqua;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            /* display: flex;
+            justify-content:center;
+            align-items: center;
+            animation-name: animationofwidth;
+            animation-duration: 2s;
+            animation-delay: 3s;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+            animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1); */
+        }
+
+      
+
+        .box1 {
+            height: 20vh;
+            width: 15vw;
+            background-color: brown;
+            color: azure;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            animation-name: animationofwidth;
+            animation-duration: 2s;
+            animation-delay: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+            /* animation: animationofwidth .11s  8 alternate-reverse cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+            /* you have short hand property for animation  */
+
+        }
+
+        @keyframes animationofwidth {
+            form {
+                width: 15vw;
+                height: 20vh;
+            }
+
+            to {
+                width: 100vw;
+                height: 30vh;
+            }
+           
+        }
+        img{
+            animation-name: dragonanimation;
+            animation-duration: 4s;
+            animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+         /* @keyframes dragonanimation {
+            from {
+                width:200px ;
+                
+            }
+            to{
+                width:400px ;
+            } 
+        } */
+        @keyframes dragonanimation {
+            0%{
+                width: 100px;
+
+            }
+            10%{
+                width: 200px;
+            }
+            40%{
+                width: 300px;
+            }
+            70%{
+                width: 500px;
+            }
+            100%{
+                width: 600px;
+            }
+        }
+        /* for more modification you can use this above property in the name of - @ key frame with percentage  */
+
+      
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">this is a box of animation</div>
+
+        <img src="/png_dragon_41706.png" alt="" width="100px">
+    </div>
+</body>
+
+</html>

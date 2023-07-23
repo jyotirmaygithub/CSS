@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>making an unique page </title>
+    <style>
+          * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+            background-color: black;
+            color: aliceblue;
+            height: 15vh;
+            /* background: url(abhay.img.webp); */
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+
+        }
+
+        li {
+            padding: 40px;
+            font-size: 28px;
+            font-weight: bold;
+          
+        }
+        .boy {
+            height: 0px;
+            width: 0px;
+            background-image: url(/jungle.img.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            top: 12px;
+            left: 20px;
+            border: 3px solid white;
+            border-radius: 50%;
+
+        }
+        .container{
+            height: 100vh;
+           background-image: url(/css/cd13.jpg);
+           background-repeat: no-repeat;
+           background-size:100%;
+           display: flex;
+           flex-direction: row;
+           flex-wrap: wrap;
+           justify-content:space-between;
+           align-content: center;
+           margin: 10px;
+
+        }
+        .box1{
+            height: 43vh;
+            width: 30vw;
+            background-image: url(/classroom.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 5px solid black;
+            border-radius: 50%;
+        }
+        .box2{
+            background-image: url(/calgary.webp);
+            height: 43vh;
+            width: 30vw;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 5px solid black;
+            border-radius: 50%;
+        }
+        .box3{
+            background-image: url(/new.jpg);
+            height: 43vh;
+            width: 30vw;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 5px solid black;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="boy"></li>
+                <li>HOME</li>
+                <li>PERSONAL INFORMATION</li>
+                <li>CONTACT US</li>
+                <li>LOGIN</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <!-- <img src="/css/cd12.jpg" alt="no more"> -->
+        <div class="box1">
+           <!-- <img src="/classroom.jpg" alt="classroom"> -->
+        </div>
+        <div class="box2">
+            <!-- <img src="/calgary.webp" alt="calgary"> -->
+        </div>
+        <div class="box3">
+            <!-- <img src="/new.jpg" alt="new zealand"> -->
+        </div>
+    </div>
+</body>
+</html>

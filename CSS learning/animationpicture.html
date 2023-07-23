@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>do animation with picture i hope it will a good example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: aquamarine;
+            height: 80vh;
+        }
+
+        .box1 {
+            border: 3px solid black;
+            display: inline-block;
+            /* transform: translate(50px,80px ); */
+            /* transform: scale(2,2)  translate(90px,150px) skew(7deg, 9deg) ; */
+            /* transform: translate(90px, 150px) rotatez(45deg); */
+            /* we have three type of rotate value for three dimenstional products we have rotatez, rotatex and rotatey(we can say that {x is used as vertical } 
+            {y is used as horizontal }  {last z is used to rotate things from centre}
+            ) */
+
+
+        }
+
+        img {
+            height: 50px;
+            width: 60px;
+            transition-property: width;
+            transition-duration: 3s;
+            transition-timing-function: cubic-bezier(1, 0, 0, 1);
+            /* by using cubic bezier you can enjoy a lot   */
+            transition-delay: 3s;
+            /* transition: width 4s cubic-bezier(1,0,0,1)  , height 3s cubic-bezier(0.19, 1, 0.22, 1) 2s ;  */
+            /* this above property is a short hand property you can use it for your convince */
+        }
+
+        img:hover {
+            height: 500px;
+            width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            <img src="/maeva-vigier-rzckjdQOh24-unsplash.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

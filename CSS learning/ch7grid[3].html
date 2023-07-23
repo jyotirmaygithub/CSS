@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practising grid to make bettter layout </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            color: aliceblue;
+            height: 15vh;
+          
+        }
+        
+        ul {
+            display: inline-grid;
+            grid-template-columns: auto auto auto auto;
+          
+        }
+        
+        li.image {
+            height: 0;
+            width: 0;
+            background-image: url(/loaf-7445434.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            top: 20px;
+            left: 6px;
+            border: 5px solid white;
+            border-radius: 50%;
+        }
+    
+     li {
+        list-style: none;
+        padding: 30px;
+        font-size: 30px;
+        font-weight: bold;
+       
+    }
+    .container{
+        background-color: aquamarine;
+        border: 5px solid black;
+        display: inline-grid;
+        grid-template-columns: auto auto auto ;
+        margin: 10px;
+        height: 80vh;
+    }
+    .box1{
+        background-color:rgb(2, 65, 27);
+        color: white;
+        border: 3px solid whitesmoke; 
+        margin: 20px; 
+        padding: 10px; 
+    }
+    .box2{
+        background-color:rgb(2, 65, 27);
+        color: white;
+        border: 3px solid whitesmoke;  
+        margin: 20px;  
+        padding: 10px;
+    }
+    .box3{
+        background-color:rgb(2, 65, 27);
+        color: white;
+        border: 3px solid whitesmoke;  
+        margin: 20px; 
+        padding: 10px; 
+    }
+    
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="image"></li>
+                <li>HOME</li>
+                <li>FEEDBACK</li>
+                <li>ABOUT US</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque veniam incidunt distinctio
+            itaque corporis obcaecati autem esse voluptatem modi quisquam. Modi quasi cum odit voluptatum magni ratione
+            porro ducimus similique.</div>
+        <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque veniam incidunt distinctio
+            itaque corporis obcaecati autem esse voluptatem modi quisquam. Modi quasi cum odit voluptatum magni ratione
+            porro ducimus similique.</div>
+        <div class="box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque veniam incidunt distinctio
+            itaque corporis obcaecati autem esse voluptatem modi quisquam. Modi quasi cum odit voluptatum magni ratione
+            porro ducimus similique.</div>
+    </div>
+</body>
+
+</html>

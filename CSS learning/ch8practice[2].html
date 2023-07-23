@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>making upper slider by using transition property of css</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            height: 15vh;
+        }
+
+        ul {
+            display: inline-grid;
+            grid-template-columns: auto auto auto auto;
+
+        }
+
+        li {
+            color: aliceblue;
+            font-size: 40px;
+            font-weight: bolder;
+            list-style: none;
+            padding: 30px;
+        }
+
+        .image {
+            height: 0px;
+            width: 0px;
+            background-image: url(/poverty2.jfif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            top: 18px;
+            left: 5px;
+            border: 3px solid white;
+            border-radius: 50%;
+
+        }
+
+        main {
+            height: 90vh;
+            background-color: aqua;
+        }
+
+        .upperbar {
+            height: 3px;
+            width: 5%;
+            background-color: red;
+            transition-property: width;
+            transition-duration: 3s;
+        
+            /* transition-timing-function: cubic-bezier(.35, .44, .24, .68); */
+            transition-timing-function:cubic-bezier(1,0,0,1);
+            /* here you need to hover your mouse exactly on the element which you want to change */
+        }
+
+        .upperbar:hover {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="upperbar"></div>
+    <header>
+        <nav>
+            <ul>
+                <li class="image"></li>
+                <li>HOME</li>
+                <li>CONTACT US</li>
+                <li>FEEDBACK</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+</body>
+
+</html>

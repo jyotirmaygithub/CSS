@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practising grid</title>
+    <style>
+        .container {
+            display: grid;
+            height: 100vh;
+            background-color: aquamarine;
+            /* grid-row-gap: 10px;
+            grid-column-gap: 19px; */
+            grid-gap: 90px;
+            grid-template-columns: 100px 153px 90px 76px;
+            grid-template-rows:200px 50px;
+            justify-content: center;
+            align-content: flex-end;
+
+        }
+
+        .table {
+            border: 2px solid black;
+            background-color: white;
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="table">1</div>
+        <div class="table">2</div>
+        <div class="table">3</div>
+        <div class="table">4</div>
+        <div class="table">6</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            height: 15vh;
+        }
+
+        ul {
+            display: inline-grid;
+            grid-template-columns: auto auto auto auto;
+
+        }
+
+        li {
+            color: aliceblue;
+            font-size: 40px;
+            font-weight: bolder;
+            list-style: none;
+            padding: 30px;
+        }
+
+        .image {
+            height: 0px;
+            width: 0px;
+            background-image: url(/poverty2.jfif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            top: 18px;
+            left: 5px;
+            border: 3px solid white;
+            border-radius: 50%;
+
+        }
+
+        main {
+            height: 90vh;
+            background-color: aqua;
+
+        }
+
+        .upperbar {
+            height: 3px;
+            width: 5%;
+            background-color: red;
+            transition-property: width;
+            transition-duration: 3s;
+
+            /* transition-timing-function: cubic-bezier(.35, .44, .24, .68); */
+            transition-timing-function: cubic-bezier(1, 0, 0, 1);
+            /* here you need to hover your mouse exactly on the element which you want to change */
+        }
+
+        .upperbar:hover {
+            width: 100%;
+        }
+
+        .slider {
+            height: 50vh;
+            width: 100vw;
+            background-color: white;
+            display: flex;
+            overflow: hidden;
+
+
+
+        }
+
+
+        .img1 {
+            animation-name: rotationimage;
+            animation-direction:normal;
+            animation-duration: 5s;
+            animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            order: 1;
+            
+        }
+
+        .img2 {
+            animation-name: rotationimage2;
+            animation-direction: normal;
+            animation-duration: 7s;
+            animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            order: 2;
+            
+        }
+        /* .img3 {
+            transform: translate(+30vw);
+            animation-name: rotationimage3;
+            animation-direction: normal;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation: forwards; */
+
+
+        /* @keyframes rotationimage {
+            0% {
+                transform: translate(0vw);
+            }
+
+            20% {
+                transform: translate(20vw);
+            }
+
+            40% {
+                transform: translate(40vw);
+            }
+
+            60% {
+                transform: translate(70vw);
+            }
+
+            80% {
+                transform: translate(90vw);
+            }
+            100% {
+                transform: translate(120vw);
+            }
+        } */
+
+        /* img:hover {
+            transform: translate(100vw)
+        } */
+
+        /* @keyframes rotationiamge2 {
+            from {
+                transform: transform(0vw);
+            }
+
+            to {
+                transform: transform(50vw);
+            }
+        } */
+        /* @keyframes rotationimage3 {
+                from {
+                    transform: translate(+30vw);
+                }
+
+                to {
+                    transform: translate(-30vw);
+                }
+            } */
+            @keyframes rotationimage {
+            0% {
+                transform: translate(0vw);
+            }
+
+            50% {
+                transform: translate(60vw);
+            }
+
+            100% {
+                transform: translate(150vw);
+            }
+        }
+        @keyframes rotationimage2 {
+            0% {
+                transform: translate(0vw);
+            }
+
+            30% {
+                transform: translate(40vw);
+            }
+
+            60% {
+                transform: translate(80vw);
+            }
+            100%{
+                transform: translate(120vw);
+            }
+        }
+
+
+    </style>
+    </head>
+
+    <body>
+        <div class="upperbar"></div>
+        <header>
+            <nav>
+                <ul>
+                    <li class="image"></li>
+                    <li>HOME</li>
+                    <li>CONTACT US</li>
+                    <li>FEEDBACK</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="slider">
+                <img class="img1 " src="https://source.unsplash.com/collection/190727/1600x901" alt="">
+                <img class="img2" src="https://source.unsplash.com/collection/190727/1600x902" alt="">
+                <!-- <img class="img3" src="https://source.unsplash.com/collection/190727/1600x900" alt=""> -->
+            </div>
+        </main>
+    </body>
+
+</html>

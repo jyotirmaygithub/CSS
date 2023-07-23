@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practising animation</title>
+    <style>
+        /* i dont know what is matrix and use of it, but if i find it useable so i will figure out - what it is */
+        .container {
+            background-color: brown;
+            height: 50vh;
+        }
+
+        .box1 {
+            background-color: aliceblue;
+            color: black;
+            border: 3px solid black;
+            /* transform: translate(50px,60px) rotate(.25turn);  */
+            /* we can also use degree for rotation (it must be in abbreviation - deg) */
+            transform-origin: 4px;
+            /* transform-origin: bottom right 60px; ; */
+            /* transform: scaleX(8);
+            transform: scaleY(8); */
+            /* = i dont why but these above two properties are not working together(these scaleX and scaleY)= (in one bracet they are working) */
+             /* transform: scale(8, 8);  */
+             transform: skew(4deg,8deg) ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo sapiente similique optio atque ab eius,
+            quod veniam alias quas asperiores maiores. Corporis perferendis sed, aspernatur harum saepe ipsam vel
+            numquam?
+        </div>
+    </div>
+</body>
+
+</html>

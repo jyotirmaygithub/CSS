@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creation of nav by using flexbox</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+            background-color: black;
+            color: aliceblue;
+            height: 15vh;
+            /* background: url(abhay.img.webp); */
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+
+        }
+
+        li {
+            padding: 40px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 70vh;
+            background-color: aliceblue;
+            border: 5px solid black;
+            margin: 10px;
+            padding: 5px;
+            justify-content: space-between;
+            align-content: center;
+
+        }
+
+        .box1 {
+            background-color: aquamarine;
+            color: black;
+            text-align: center;
+            height: 50vh;
+            width: 30vw;
+            border: thick double black;
+            border-radius: 15px;
+
+        }
+
+        .box2 {
+            background-color: rgb(50, 11, 249);
+            color: rgb(250, 239, 239);
+            text-align: center;
+            height: 50vh;
+            width: 30vw;
+            border: thick double black;
+            border-radius: 15px;
+
+        }
+
+        .box3 {
+            background-color: rgb(231, 18, 40);
+            color: rgb(240, 234, 234);
+            text-align: center;
+            height: 50vh;
+            width: 30vw;
+            border: thick double black;
+            border-radius: 15px;
+
+        }
+
+        .boy {
+            height: 0px;
+            width: 0px;
+            background-image: url(/css/abhay.img.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            top: 10px;
+            left: 10px;
+            border: 3px solid white;
+            border-radius: 50%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="boy"></li>
+                <li>HOME</li>
+                <li>PERSONAL INFORMATION</li>
+                <li>CONTACT US</li>
+                <li>LOGIN</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="box1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iure expedita, dicta ex illum architecto
+            molestiae harum esse hic nam rem. Delectus autem aperiam fuga numquam ducimus totam eaque deleniti.
+        </div>
+        <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eveniet rerum assumenda minima
+            impedit molestias quasi quibusdam molestiae magnam, earum itaque odio veniam maiores praesentium, quis ullam
+            tempora? Cum, doloremque.</div>
+        <div class="box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et maxime fugit perspiciatis
+            temporibus a possimus, dolorum sed ipsum, est molestias pariatur distinctio numquam debitis dolor. Ipsam cum
+            deleniti optio voluptates.</div>
+    </div>
+</body>
+
+</html>
